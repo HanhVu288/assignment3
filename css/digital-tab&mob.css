@@ -1,0 +1,8 @@
+@media screen and (max-width: 992px) {
+  .d-flex {
+    flex-direction: column;
+  }
+  .d-flex i {
+    text-align: center;
+  }
+}

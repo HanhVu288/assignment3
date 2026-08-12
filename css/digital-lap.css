@@ -1,0 +1,39 @@
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* goal border */
+.goals .d-flex {
+  border-bottom: solid 1px rgba(128, 128, 128, 0.371);
+}
+/* timeline border */
+.timeline-content {
+  border-bottom: dotted 1px rgb(0, 153, 255);
+  width: 100%;
+}
+/* number */
+.number {
+  border: solid 2px rgb(118, 21, 192);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: rgb(160, 70, 229);
+  color: aliceblue;
+  padding: 6px;
+  font-size: 25px;
+}
+.project-cv {
+  display: none;
+}
+.timeline-box {
+  border-left: 0 !important;
+}
+.Team,
+.primary {
+  border-right-width: 10px !important;
+}
+/* Chỉ hiển thị duy nhất dự án trùng với ID trên thẻ <a> (#duan2) */
+.project-cv:target {
+  display: block;
+}

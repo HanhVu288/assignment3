@@ -1,0 +1,11 @@
+@media screen and (max-width: 992px) {
+  .space {
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .info2 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+}

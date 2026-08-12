@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 576px)"
+      href="./css/mobile.css"
+    />
+
+    <title>Assignment03</title>
+  </head>
+  <body>
+    <div class="cv-document">
+      <!-- header -->
+      <header>
+        <img src="images/banner.jpg" alt="baner" />
+        <div class="name">
+          <h1>Vũ Thị Hồng Hạnh</h1>
+          <p>Nurse</p>
+        </div>
+      </header>
+      <nav class="navbar">
+        <div class="nav-item"><i class="icon-user"></i>thông tin</div>
+        <div class="nav-item"><i class="icon-doc-text-inv"></i>lý lịch</div>
+        <div class="space"></div>
+        <div class="avatar">
+          <img src="images/default-avatar.webp" alt="avatar" />
+        </div>
+        <div class="nav-item"><i class="icon-mail-alt"></i>chứng chỉ</div>
+        <div class="nav-item"><i class="icon-star-1"></i>dự án</div>
+      </nav>
+      <main>
+        <!-- Thông tin cá nhân -->
+        <section class="info row g-0">
+          <div class="muctieu col-12 col-lg-6">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>
+              Là một sinh viên đã tốt nghiệp chứng chỉ điều dưỡng hệ cao đẳng.
+              Tôi mong muốn được làm việc với tư cách là một điều dưỡng viên tại
+              đây, tôi có thể vận dụng những kiến thức mình đã học và kinh
+              nghiệm từng có để chăm sóc bệnh nhân một cách tốt nhất. Tôi cũng
+              mong muốn được học hỏi thêm những kiến thức mới từ các đồng nghiệp
+              để phát triển bản thân hơn.
+            </p>
+          </div>
+          <div class="canhan col-12 col-lg-6">
+            <div>
+              <h2>Thông tin cá nhân</h2>
+              <div class="section-content">
+                <p><strong>Họ và tên</strong> :Vũ Thị Hồng Hạnh</p>
+              <p><strong>Giới tính</strong> : Nữ</p>
+              <p><strong>Ngày sinh</strong> :28/08/1995</p>
+              <p><strong>Điện thoại</strong> :(+81)7077759206</p>
+              <p><strong>Email</strong> :hanhvthfx89559@funix.edu.vn</p>
+              <p><strong>Địa chỉ</strong> :Nhật Bản</p>
+              <p><strong>Website</strong> :https://abc.tech</p>
+            <div class="info-socials">
+              <i class="icon-twitter"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-gplus"></i>
+              <i class="icon-linkedin"></i>
+            </div>
+          </div>
+          <div class="submit-email">
+            <input type="email" id="email">
+            <p id="error-email"></p>
+            <button type="button" class="btn btn-primary"
+             
+            onclick="handleSumit()">Submit</button>
+          </div>
+        </div>
+            
+        </section>
+        <!-- Thông tin -->
+        <section class="info2">
+          <div class="section " id="experience" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Kinh nghiệm</h2>
+              <i class="ic-toolbox"></i>
+            </div>
+            <div class="section-content ">
+              <p class="circle">
+                <strong>Nhân viên chăm sóc - Bệnh viện Hirashima</strong>
+              </p>
+              <p class="time">10/2020 - <span class="now">Hiện tại</span></p>
+              <ul>
+                <li>
+                  - Chăm sóc bệnh nhân về các mặt sinh lý: ăn uống, vệ sinh cá
+                  nhân,...
+                </li>
+                <li>- Hỗ trợ y tá trong việc chăm sóc bệnh nhân</li>
+                <li>
+                  - Hợp tác với các ban ngành khác để ra kế hoạch chăm sóc bệnh
+                  nhân
+                </li>
+              </ul>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more " >View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          <div class="section" id="education" onmouseover="handleOnMouseOver(this) " onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Học vấn</h2>
+              <i class="ic-pencil"></i>
+            </div>
+            <div class="section-content ">
+              <ul class="job-list">
+                <li>
+                  <strong> Cử nhân - CĐ Viễn Đông </strong>
+                  <p class="time">9/2013-10/2016</p>
+                  <ul>
+                    <li>- Chuyên ngành: Điều dưỡng</li>
+                    <li>- Loại:Khá</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong> Học viện Welllife (Nhật bản) </strong>
+                  <p class="time">9/2018 - 9/2020</p>
+                  <ul>
+                    <li>- Chuyên ngành: Chăm sóc người cao tuổi</li>
+                    <li>- Loại:Giỏi</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+             <div class="control-view">
+              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          <div class="section" id="activity" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Hoạt động</h2>
+              <i class="ic-toolbox"></i>
+            </div>
+            <div class="section-content">
+              <ul class="job-list">
+                <li>
+                  <strong>
+                    Chương trình hỗ trợ đào tạo nhân viên mới người nước ngoài
+                    tại bệnh viện
+                  </strong>
+                  <p class="time">04/2022 - 09/2022</p>
+                  <ul>
+                    <li>- Thành viên hỗ trợ</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>
+                    Hỗ trợ chăm sóc bệnh nhân trong thời kỳ COVID-19
+                  </strong>
+                  <p class="time">2020 - 2021</p>
+                  <ul>
+                    <li>- Nhân viên chăm sóc</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          <div class="control-view">
+              <button type="button" class="btn btn-warning view-more" >View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          
+          <div class="section" id="hobby" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Sở thích</h2>
+              <i class="ic-telescope"></i>
+            </div>
+<div class="section-content">
+            <div class="hobby-item">
+              <div>
+                <i class="ic-megaphone"></i>
+                <p>Âm nhạc</p>
+              </div>
+              <div>
+                <i class="ic-hotairballoon"></i>
+                <p>Du lịch</p>
+              </div>
+              <div>
+                <i class="ic-basket"></i>
+                <p>Nấu ăn</p>
+              </div>
+            </div>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more" >View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          
+          <div class="section" id="language" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Ngôn ngữ</h2>
+              <i class="ic-mic"></i>
+            </div>
+            <div class="section-content">
+              <span>Tiếng Nhật - JLPT N2</span>
+              <div class="progress">
+                <span class="progress-fill"></span>
+                <span class="progress-fill"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more" >View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          
+          <div class="section" id="skill" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)">
+            <div class="section-title">
+              <h2>Kỹ năng</h2>
+              <i class="ic-tools-2"></i>
+            </div>
+            <div class="section-content">
+              <span>Chăm sóc người bệnh</span>
+              <div class="progress">
+                <span class="progress-fill"></span>
+                <span class="progress-fill"></span>
+                <span class="progress-fill"></span>
+              </div>
+              <span>Giao tiếp bằng tiếng Nhật</span>
+              <div class="progress">
+                <span class="progress-fill"></span>
+                <span class="progress-fill"></span>
+                <span></span>
+              </div>
+              <span>Sơ cứu và AED</span>
+              <div class="progress">
+                <span class="progress-fill"></span>
+                <span class="progress-fill"></span>
+                <span></span>
+              </div>
+              <span>Microsoft Office</span>
+              <div class="progress">
+                <span class="progress-fill"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="control-view">
+              <button type="button" class="btn btn-warning view-more">View more</button>
+              <button type="button" class="btn btn-warning less-more">Less more</button>
+            </div>
+          </div>
+          
+        </section>
+        <!-- chứng chỉ -->
+        <section class="cc-gt">
+          <h2>Chứng chỉ - Giải thưởng</h2>
+
+          <div class="chungchi">
+            <div class="chungchi-item">
+              <img src="images/N2.png" alt="N2" width="100px" />
+              <div>
+                <h3>Chứng chỉ tiếng Nhật N2</h3>
+                <p>- Japan Educational Exchanges and Services</p>
+                <p>- Total Score: 145/180</p>
+              </div>
+            </div>
+            <div class="chungchi-item">
+              <img src="images/kaigo.png" alt="kaigofukushishi" width="100px" />
+              <div>
+                <h3>Kaigo Fukushishi</h3>
+                <p>- Chứng chỉ Quốc gia Nhật Bản - Nhân viên chăm sóc</p>
+                <p>- Cấp vào tháng 9 năm 2020</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="chungchi">
+            <div class="chungchi-item">
+              <img src="images/aed.png" alt="aed" width="100px" />
+              <div>
+                <h3>Chứng chỉ Sơ cứu và AED</h3>
+                <p>- Cấp bởi Cơ quan Cứu hỏa thành phố Tamba Sasayama</p>
+                <p>- Cấp vào tháng 7 năm 2020</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- dự án -->
+        <section>
+          <h2 class="duan-title">Dự án</h2>
+          <div class="duan">
+            <div class="duan-item">
+              <img src="images/duan1.png" alt="CV cá nhân" />
+              <h3><a href="/digital-cv.html#cv " target="_blank">CV CÁ NHÂN</a></h3>
+              <div class="duan-chitiet">
+                <span class="icon-fix">2026</span>
+                <span><i class="icon-user-1"></i> FUNIX</span>
+                <span><i class="icon-lamp"></i> Developer</span>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Trang web CV cá nhân online, gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML - CSS</td>
+                </tr>
+              </table>
+            </div>
+            <div class="duan-item">
+              <img src="images/duan2.jpg" alt="Hỗ trợ nhân viên nước ngoài" />
+              <h3><a href="/digital-cv.html#duan2" target="_blank">HỖ TRỢ NHÂN VIÊN NƯỚC NGOÀI</a></h3>
+              <div class="duan-chitiet">
+                <span class="icon-fix">2022</span>
+                <span><i class="icon-user-1"></i> Hospital</span>
+                <span><i class="icon-lamp"></i> Member</span>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Hỗ trợ nhân viên nước ngoài trong việc làm quen với môi
+                    trường làm việc và nội quy bệnh viện.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    Tạo môi trường làm việc dễ dàng cho nhân viên nước ngoài.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Kết quả</th>
+                  <td>
+                    Nhân viên nước ngoài nhanh chóng thích nghi với môi trường
+                    làm việc và nâng cao hiệu quả công việc.
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="duan-item">
+              <img src="images/duan3.png" alt="dự phòng té ngã" />
+              <h3 ><a href="/digital-cv.html#duan3" target="_blank"> GIẢM NGUY CƠ TÉ NGÃ CHO NGƯỜI BỆNH</a></h3>
+              <div class="duan-chitiet">
+                <span class="icon-fix">2024</span>
+                <span><i class="icon-user-1"></i> Hospital</span>
+                <span><i class="icon-lamp"></i> Member</span>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Thực hiện các biện pháp phòng chống té ngã cho bệnh nhân
+                    trong quá trình điều trị tại bệnh viện.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    Tìm hiểu và loại bỏ những nguy cơ có thể gây té ngã ở người
+                    bệnh.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Kết quả</th>
+                  <td>
+                    Giảm tỷ lệ té ngã của bệnh nhân so với giai đoạn trước khi
+                    triển khai dự án.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <i class="icon-facebook-circled"></i>Facebook
+        <i class="icon-linkedin-circled"></i>Linkedin
+        <i class="icon-github-circled"></i>Github
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

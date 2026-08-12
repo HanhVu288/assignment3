@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 40px;
+  font-family: helvetica;
+  font-size: 12px;
+}
+.cv-document {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+p {
+  color: #696565;
+}
+header {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+header img {
+  width: 100%;
+  display: block;
+}
+header h1 {
+  font-weight: lighter;
+}
+header p {
+  color: rgba(255, 255, 255, 0.425);
+}
+
+.name {
+  color: aliceblue;
+  text-align: center;
+  position: absolute;
+  top: 8vw;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  font-size: 2vw;
+}
+/* Navbar */
+.navbar {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.nav-item {
+  text-align: center;
+  border-left: 0.5px solid #ddd;
+  border-right: 0.5px solid #ddd;
+  font-size: 10px;
+  padding: 13px;
+  text-decoration: none;
+}
+.nav-item i {
+  color: rgb(77, 162, 231);
+}
+.space {
+  width: 150px;
+}
+.avatar {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -90%;
+}
+.avatar img {
+  width: 100px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+/* Thông tin cá nhân */
+
+.muctieu {
+  background-color: #dddddd86;
+  padding: 30px;
+}
+.canhan {
+  background-color: #ddddddbd;
+  padding: 30px;
+}
+.canhan .section-content {
+  display: none;
+}
+.canhan p {
+  margin-bottom: 5px;
+}
+.info-socials {
+  color: rgb(0, 115, 255);
+  margin-top: 20px;
+}
+/* css error email */
+#email {
+  width: 250px;
+}
+#error-email {
+  color: red;
+  font-size: 10px;
+}
+/* thông tin chi tiết */
+.info2 {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.info2 ul {
+  margin-bottom: 10px;
+}
+.circle::before {
+  content: "●";
+  color: rgb(0, 110, 255);
+  font-size: 14px;
+  vertical-align: 3px;
+  margin-right: 5px;
+}
+.now {
+  border: 1px solid rgb(13, 164, 251);
+  color: white;
+  background-color: rgb(13, 172, 251);
+  border-radius: 5px;
+  font-size: 8px;
+  padding: 2px 4px 2px 4px;
+  font-style: italic;
+}
+.time {
+  margin: 5px 0 7px;
+}
+
+.info2 ul li::marker {
+  color: rgb(0, 110, 255);
+  font-size: 20px;
+}
+#experience ul,
+#education ul li ul,
+#activity ul li ul {
+  list-style-type: none;
+}
+.view-more,
+.less-more {
+  display: none;
+}
+
+#experience .section-content,
+#education .section-content,
+#activity .section-content,
+#hobby .section-content,
+#language .section-content,
+#skill .section-content {
+  display: none;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.section-title i {
+  font-size: 30px;
+  color: #696565b1;
+  margin-right: 5px;
+}
+.section {
+  border: 1px solid #ddddddd0;
+  padding: 30px 20px 50px 20px;
+}
+.job-list {
+  padding-left: 15px;
+}
+.section-content {
+  color: #696565da;
+  font-weight: 400;
+}
+
+#hobby .hobby-item i {
+  font-size: 8px;
+  border: 1px solid rgba(0, 183, 255, 0.648);
+  padding: 7px;
+  width: fit-content;
+  color: rgb(0, 183, 255);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.hobby-item {
+  display: flex;
+  font-size: 8px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.progress {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  height: 3px;
+  background: transparent;
+}
+.progress span {
+  background: #e0e0e0;
+  flex: 1;
+  height: 100%;
+}
+.progress .progress-fill {
+  background-color: rgb(0, 128, 255);
+}
+/* chung chi giai thuong */
+.cc-gt {
+  padding: 30px;
+  background-color: #cebfbf58;
+}
+
+.chungchi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chungchi-item {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.chungchi-item img {
+  width: 70px;
+  margin-right: 20px;
+}
+.chungchi-item h3 {
+  font-weight: 400;
+}
+.chungchi-item:nth-child(2) {
+  border-left: 1px solid #8d8585;
+  padding-left: 10px;
+}
+
+/* dự án */
+.duan {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  color: #696565c2;
+}
+.duan img {
+  width: 100%;
+  border-bottom: 1px solid #8d858571;
+  height: 150px;
+}
+.duan-title {
+  margin: 30px;
+}
+.duan h3 {
+  border-bottom: 1px solid #8d858571;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 550;
+  color: #696565;
+}
+.duan-chitiet {
+  border-bottom: 1px solid #8d858571;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+.duan-item {
+  border: 1px solid #8d858571;
+  border-collapse: collapse;
+}
+.duan-item table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.duan-item tr {
+  border-bottom: 1px solid #8d858571;
+}
+.duan-item tr:last-child {
+  border-bottom: none;
+}
+.duan-item th,
+.duan-item td {
+  vertical-align: top;
+  font-size: 10px;
+  padding: 5px;
+  text-align: left;
+}
+.duan-item th {
+  font-weight: 300;
+  width: 55px;
+}
+.icon-fix {
+  border: 1px solid rgba(13, 108, 251, 0.825);
+  color: white;
+  background-color: rgba(13, 108, 251, 0.825);
+  border-radius: 99px;
+  font-size: 8px;
+  padding: 2px 4px 2px 4px;
+}
+footer {
+  background-color: #dddddd95;
+  padding: 20px;
+  text-align: center;
+  color: #696565c2;
+}
+footer i {
+  color: rgb(0, 174, 255);
+  font-size: 150%;
+}

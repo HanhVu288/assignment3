@@ -1,0 +1,29 @@
+.navbar {
+  flex-direction: column;
+  height: auto;
+  align-items: stretch;
+}
+.nav-item {
+  border: none;
+}
+.info2 {
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+}
+.chungchi {
+  grid-template-columns: 1fr;
+}
+hr {
+  display: none;
+}
+.chungchi-item:nth-child(2) {
+  border-left: none;
+}
+.chungchi-item:nth-last-child(1) {
+  border-top: 1px solid red;
+  padding-top: 30px;
+}
+
+.duan {
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
